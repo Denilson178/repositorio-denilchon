@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background: linear-gradient(150deg, #5499C7, #E5E7E9);
+    height: 100vh;
+}
+
+.perfilUsuario{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background:#E5E7E9;
+    border-radius: 10px;
+    }
+    
+    .perfilUsuario h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+    }
+    
+    .perfilUsuario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+    }
+
+    input[type="submit"]{
+        width: 40%;
+        position: fixed;
+        bottom: auto;
+        left: 30%;
+        height: 30px;
+        border: 2px solid;
+        background: #5499C7;
+        border-radius: 15px;
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    input[type="submit"]:hover{
+        border-color: #5499C7;
+        transition: .5s;
+    }
+    
