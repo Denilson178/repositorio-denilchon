@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
+    <title>Crear Publicacion</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="estiloPantallaUsuario.css">
+    <link rel="stylesheet" href="estiloPantallaCrearPublicacion.css">
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">MiuiBlog</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,56 +23,49 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Mi perfil</a>
             </li>
-     
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Salir</a>
-            </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Crear publicacion</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Salir</a>
+            </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
+            <br>     
             <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Busqueda Av</button>
           </form>
         </div>
       </nav>
+<!--NavBar termina aqui-->
 
-      <div class = "perfilUsuario">
-        <h1>Mi información</h1>
+      <div class = "formulario">
+        <h1>Crear publicacion</h1>
         <form method="post">
             <div class="username">
-                <label>Nombre de usuario:</label>
+                <input type="text"required>
+                <label>Titulo de la publicacion</label>
             </div>
             <div class="username">
-                <label>Edad:</label>
+                <input type="text"required>
+                <label>Descripción</label>
             </div>
-            <div class="username">
-                <label>Nombre y apellidos:</label>
+            <div class="categorias">
+            Categoría:<select name="categoria" id="categoria">
+                <option value="Informativo">Informativo</option>
+                <option value="Sentimental">Sentimental</option>
+                <option value="Pregunta">Pregunta</option>
+                <option value="Pensamiento">Pensamiento</option>
+            </select>
             </div>
-            <div class="username">
-                <label>Correo electronico:</label>
-            </div>
-            <div class="username">
-                <label>Contraseña:</label>
-            </div>
-            <div class="username">
-                <label>Fecha nacimiento:</label>
-            </div>
-            <div class="username">
-                <label>Imagen de perfil</label>
-            </div>
-            <br>
-            <input type="submit" value="Editar">
-
         </form>
+        <input type="submit" value="Publicar">
      </div>
 
-     <footer>
-      <br>
-      <p>Autores:Denilson Mata 2076290 | Gerardo Gonzales 1918884 </p><br>
-    </footer>
+    <footer>
+        Autores:Denilson Mata 2076290 | Gerardo Gonzalez 1918884
+      </footer>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
