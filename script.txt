@@ -1,0 +1,48 @@
+CREATE DATABASE ejemplo_Repositorio;
+use ejemplo_Repositorio;
+
+<!---Create table ---!>
+
+CREATE TABLE Estado(
+ID_Estado int primary key not null,
+Inactivo bool,
+Activo bool,
+Ausente bool,
+Ocupado bool,
+);
+
+
+
+CREATE TABLE Categorias(
+ID_Categorias int primary key not null,
+Informativo bool,
+Sentimental bool,
+Pregunta bool,
+Pensamiento bool,
+);
+
+
+
+CREATE TABLE Usuario(
+ID_Usuario int primary key not null,
+NombreUsuario varchar(60),
+Edad varchar (30),
+NombreYapellidos varchar (30),
+CorreoElectronico varchar (60),
+ImagenPerfil varchar (256),
+FechaNacimiento varchar (30),
+Contraseña varchar (30),
+FOREIGN KEY (ID_Estado) REFERENCES EStado(ID_Estado),
+FOREIGN KEY (ID_Publicacion) REFERENCES Publicacion(ID_Publicacion));
+
+
+
+CREATE TABLE Publicacion(
+ID_Publicacion int primary key not null,
+Titulo varchar (30),
+Descripcion varchar (256),
+Categoria bool,
+Fecha int,
+FOREIGN KEY (ID_Estado) REFERENCES Estado(ID_Setatus),
+FOREIGN KEY (ID_Usuario) REFERENCES Usuario(ID_Usuario),
+FOREIGN KEY (ID_Categorias) REFERENCES Categoria(ID_Categorias));
