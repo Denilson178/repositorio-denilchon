@@ -1,0 +1,12 @@
+Things to do:
+--Front--
+Correccion footer(*)
+Correccion dashboard(*)
+Enlace entre pantallas con el navbar(*)
+
+Pasar todo a NetBeans
+HTML -> JPS
+
+--Back--
+Conexión  a Base de Datos
+Pantallas Registro e Inicio Sesión Funcionando

@@ -141,12 +141,11 @@ border-radius: 10px;
     
     footer {
         position: absolute;
-        top: 99%;
+        top: 97%;
         left: 50%;
         box-sizing: border-box;
         transform: translate(-50%, -50%);
-        padding: 5px;
-        width: 700px;
+        width:100%;
         text-align: center;
         background: #AED6F1;
         border-radius: 5px;

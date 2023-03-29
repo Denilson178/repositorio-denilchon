@@ -13,7 +13,7 @@
 
     <div class = "registro">
         <h1>Formulario para registrarse</h1>
-        <form method="post">
+        <form id="MyForm" action="index.html"  method="post">
             <div class="usuarioRegistro">
                 <input type="text"required>
                 <label>Nombre(s)</label>
@@ -43,10 +43,16 @@
                 <label>Imagen de perfil</label>
             </div>
             <br>
-            <input type="submit" value="Registrarse">
+            <input type="submit" value="Registrarse" onclick="MyFunction()">
             
         </form>
      </div>
+
+     <script>
+        function MyFunction(){
+        document-getElementById("MyForm").submit();
+    }
+     </script>
      
      <footer>
         <p>Autores:Denilson Mata 2076290 | Gerardo Gonzales 1918884 </p><br>

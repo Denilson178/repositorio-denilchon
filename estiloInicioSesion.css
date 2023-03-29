@@ -125,7 +125,7 @@ footer {
     left: 50%;
     box-sizing: border-box;
     transform: translate(-50%, -50%);
-    width: 500px;
+    width:100%;
     text-align: center;
     background: #AED6F1;
     border-radius: 5px;

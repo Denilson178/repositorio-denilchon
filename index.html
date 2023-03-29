@@ -10,7 +10,7 @@
 <body>
  <div class = "formulario">
     <h1>Inicio de sesion</h1>
-    <form method="post">
+    <form id="MyForm" action="PantallaDashboard.html" method="post">
         <div class="username">
             <input type="text"required>
             <label>Nombre de usuario</label>
@@ -20,12 +20,18 @@
             <label>Contraseña</label>
         </div>
         <div class="recordar">¿Olvidaste tu contraseña?</div>
-        <input type="submit" value="Iniciar">
+        <input type="submit" value="Iniciar" onclick="MyFunction()">
         <div class="registrarse">
-            Quiero hacer el <a href="#">registro</a>
+            Quiero hacer el <a href="PantallaRegistro.html">registro</a>
         </div>
     </form>
  </div>
+
+ <script>
+    function MyFunction(){
+    document-getElementById("MyForm").submit();
+}
+ </script>
 
  <footer>
     <p>Autores:Denilson Mata 2076290 | Gerardo Gonzales 1918884</p><br>
